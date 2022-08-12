@@ -67,7 +67,7 @@ export default function CreateForm(){
                   
                    />
                     <br/>
-                   
+                    <button type="submit" className="btn">Submit</button>
             </form>
 
 
