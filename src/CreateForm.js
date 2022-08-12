@@ -2,10 +2,16 @@ import {useState} from "react"
 import "./app.css"
 export default function CreateForm(){
      // Declare state for tracking form data
-     
-     const[userData,setUserData]=useState({})
+     const[userData,setUserData]=useState({
 
 
+
+     })
+
+
+       const handleChange = (e)=>{
+          console.log(e.target.value)
+       }
 
     return(
         <div>
@@ -16,7 +22,8 @@ export default function CreateForm(){
                     className="input"
                     type="text" 
                     placeholder="Full Name*"
-                    style={{marginBottom:"15px"}} 
+                    style={{marginBottom:"15px"}}
+                    onChange={handleChange} 
                     />
 
                    <input
@@ -24,6 +31,7 @@ export default function CreateForm(){
                    className="userName"
                    type="text" 
                    placeholder="UserName*"
+                   onChange={handleChange}
                    /> 
                    <br/>
                    <input 
@@ -32,13 +40,15 @@ export default function CreateForm(){
                     type="text"
                      placeholder="Email*" 
                      style={{marginBottom:"15px"}} 
+                     onChange={handleChange}
                      />
                        
                    <input
                     name="Number" 
                     className="Number" 
                     type="text" 
-                    placeholder="Number*" 
+                    placeholder="Number*"
+                    onChange={handleChange}
                     />
                    <br/>
 
@@ -47,14 +57,16 @@ export default function CreateForm(){
                     className="Password" 
                     type="text" 
                     placeholder="Password*"
-                    style={{marginBottom:"15px"}} 
+                    style={{marginBottom:"15px"}}
+                    onChange={handleChange}
                     />
 
                    <input  
                    name ="Confirm_Password" 
                    className="confirm-Password"  
                    type="text" 
-                   placeholder="Confirm Password*" 
+                   placeholder="Confirm Password*"
+                   onChange={handleChange} 
                    />
 
                    <br/> 
@@ -62,7 +74,8 @@ export default function CreateForm(){
                    name = "URL" 
                    className="url" 
                    type="link" 
-                   placeholder="URL Link*" 
+                   placeholder="URL Link*"
+                   onChange={handleChange} 
                    />
 
                    <input 
@@ -70,7 +83,7 @@ export default function CreateForm(){
                    className="slug" 
                    type="text" 
                    placeholder="Slack*" 
-                  
+                   onChange={handleChange}
                    />
                     <br/>
                     <button type="submit" className="btn">Submit</button>
