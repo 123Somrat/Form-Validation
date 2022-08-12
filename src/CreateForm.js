@@ -1,5 +1,11 @@
+import {useState} from "react"
 import "./app.css"
 export default function CreateForm(){
+     // Declare state for tracking form data
+     
+     const[userData,setUserData]=useState({})
+
+
 
     return(
         <div>
