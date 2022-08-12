@@ -3,16 +3,17 @@ import "./app.css"
 export default function CreateForm(){
      // Declare state for tracking form data
      const[userData,setUserData]=useState({
-
-
-
      })
 
 
        const handleChange = (e)=>{
+         // collect field name
          const  name = e.target.name;
+         // collect all field value
          const values =  e.target.value;
+         // updateing state useing state
          setUserData({
+            // collecting all previous data useing spread operator
             ...userData,
             [name]:values
          })
@@ -21,6 +22,9 @@ export default function CreateForm(){
          console.log(userData)
 
        }
+        // distructing object
+       const{fullName,UserName,Email,Number,Password,Confirm_Password,URL,Slack}=userData;
+       console.log(fullName)
 
     return(
         <div>
@@ -32,7 +36,8 @@ export default function CreateForm(){
                     type="text" 
                     placeholder="Full Name*"
                     style={{marginBottom:"15px"}}
-                    onChange={handleChange} 
+                    onChange={handleChange}
+                    value={fullName} 
                     />
 
                    <input
