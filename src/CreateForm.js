@@ -10,7 +10,16 @@ export default function CreateForm(){
 
 
        const handleChange = (e)=>{
-          console.log(e.target.value)
+         const  name = e.target.name;
+         const values =  e.target.value;
+         setUserData({
+            ...userData,
+            [name]:values
+         })
+         console.log(name)
+         console.log(values)
+         console.log(userData)
+
        }
 
     return(
