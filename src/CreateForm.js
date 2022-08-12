@@ -9,7 +9,8 @@ export default function CreateForm(){
                     name="fullName" 
                     className="input"
                     type="text" 
-                    placeholder="Full Name*" 
+                    placeholder="Full Name*"
+                    style={{marginBottom:"15px"}} 
                     />
 
                    <input
@@ -24,6 +25,7 @@ export default function CreateForm(){
                     className="Email" 
                     type="text"
                      placeholder="Email*" 
+                     style={{marginBottom:"15px"}} 
                      />
                        
                    <input
@@ -39,6 +41,7 @@ export default function CreateForm(){
                     className="Password" 
                     type="text" 
                     placeholder="Password*"
+                    style={{marginBottom:"15px"}} 
                     />
 
                    <input  
