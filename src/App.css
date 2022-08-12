@@ -13,3 +13,85 @@
     font-size:17px;
     margin-bottom: 15px;
 }
+
+.formDiv{
+    width:50%;
+    height: 350px;
+    margin:0 auto;
+    box-sizing: border-box;
+    background-color: azure;
+   
+}
+.input{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 370px;
+
+}
+.userName{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+}
+.Email{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 370px;
+
+}
+.Number{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+
+
+}
+.Password{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 370px;
+}
+.confirm-Password{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+
+
+}
+.url{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 370px;
+  margin-bottom: 15px;
+}
+.slug{
+  width:315px;
+  height:23px;
+  padding:10px;
+  border:2px solid grey;
+  border-radius: 8px; 
+  
+  
+} 

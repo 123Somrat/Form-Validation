@@ -1,3 +1,4 @@
+import "./app.css"
 export default function CreateForm(){
 
     return(
