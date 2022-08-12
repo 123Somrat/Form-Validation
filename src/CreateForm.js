@@ -29,7 +29,7 @@ export default function CreateForm(){
     return(
         <div>
 
-             <form  >
+             <form onSubmit={handleSubmit} >
                    <input
                     name="fullName" 
                     className="input"
