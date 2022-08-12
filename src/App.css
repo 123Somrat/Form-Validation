@@ -95,3 +95,9 @@
   
   
 } 
+.btn{
+    width:700px;
+    margin-left: 370px;
+    border-radius: 7px;
+    padding: 10px;
+}
