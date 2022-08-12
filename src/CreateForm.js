@@ -3,6 +3,7 @@ import "./app.css"
 export default function CreateForm(){
      // Declare state for tracking form data
      const[userData,setUserData]=useState({
+
      })
 
 
@@ -17,14 +18,14 @@ export default function CreateForm(){
             ...userData,
             [name]:values
          })
-         console.log(name)
-         console.log(values)
-         console.log(userData)
-
+        
+         const handleSubmit = ()=>{
+            
+         }
        }
         // distructing object
        const{fullName,UserName,Email,Number,Password,Confirm_Password,URL,Slack}=userData;
-       console.log(fullName)
+       
 
     return(
         <div>
